@@ -1,0 +1,176 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffebee, #fff3e0); /* Céu rosado */
+    color: #800000; /* Maroon */
+    text-align: center;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Fundo sutil */
+    background-size: cover;
+}
+
+header {
+    background-color: #ff6f91; /* Rosa vibrante */
+    color: #fff;
+    padding: 30px;
+    border-bottom: 5px solid #ff4081; /* Rosa escuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header .hearts {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: #ff4081; /* Rosa escuro */
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    margin: 20px 0;
+    color: #4a4a4a; /* Cinza suave */
+    text-align: justify;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+    border: 8px solid #ff4081; /* Rosa escuro */
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.image-row img {
+    max-width: 45%;
+    border-radius: 15px;
+    border: 5px solid #ff4081; /* Rosa escuro */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.message-final {
+    font-size: 1.5em;
+    color: #ff4081; /* Rosa escuro */
+    margin-top: 20px;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Decoração adicional */
+.heart-decor {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #ff4081;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.heart1 {
+    top: 10%;
+    left: 10%;
+}
+
+.heart2 {
+    top: 20%;
+    right: 10%;
+}
+
+.heart3 {
+    bottom: 10%;
+    left: 20%;
+}
+
+.heart4 {
+    bottom: 20%;
+    right: 20%;
+}
+
+.sun {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, #ffdd00 30%, transparent 70%);
+    border-radius: 50%;
+    top: 10%;
+    right: 5%;
+    opacity: 0.5;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
